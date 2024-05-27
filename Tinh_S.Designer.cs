@@ -160,7 +160,7 @@
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 11;
-            button1.Text = "button1";
+            button1.Text = "Giải";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -168,7 +168,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 10F);
-            label5.Location = new Point(329, 348);
+            label5.Location = new Point(206, 329);
             label5.Name = "label5";
             label5.Size = new Size(69, 23);
             label5.TabIndex = 12;
