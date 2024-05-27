@@ -56,10 +56,11 @@ namespace WinFormsAppFinal
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            if (option == 0 )
+            if (option == 0)
             {
                 label5.Text = "Hãy chọn dạng hình và nhập số liệu!";
-            }else if (option == 1)
+            }
+            else if (option == 1)
             {
                 double a, b, c;
                 a = double.Parse(textBox1.Text);
@@ -70,13 +71,14 @@ namespace WinFormsAppFinal
                 S = Math.Sqrt(P * (P - a) * (P - b) * (P - c));
                 label5.Text = "Chu vi của hình tam giác là " + P + "\n Diện tích của hình tam giác là " + S;
                 label5.Visible = true;
-            }else if(option == 2)
+            }
+            else if (option == 2)
             {
                 double a, b;
                 a = double.Parse(textBox1.Text);
                 b = double.Parse(textBox2.Text);
                 double P, S;
-                P =  (a + b) * 2;
+                P = (a + b) * 2;
                 S = a * b;
                 label5.Text = "Chu vi của hình chữ nhật là " + P + "\n Diện tích của hình chữ nhật là " + S;
                 label5.Visible = true;
@@ -85,7 +87,7 @@ namespace WinFormsAppFinal
             {
                 double a;
                 a = double.Parse(textBox1.Text);
-              
+
                 double P, S;
                 P = a * 4;
                 S = a * a;
@@ -98,11 +100,16 @@ namespace WinFormsAppFinal
                 a = double.Parse(textBox1.Text);
 
                 double P, S;
-                P = 2 * Math.PI * a ;
+                P = 2 * Math.PI * a;
                 S = Math.PI * a * a;
                 label5.Text = "Chu vi của hình tròn là " + P + "\n Diện tích của hình tròn là " + S;
                 label5.Visible = true;
             }
+
+        }
+
+        private void Tinh_S_Load(object sender, EventArgs e)
+        {
 
         }
     }

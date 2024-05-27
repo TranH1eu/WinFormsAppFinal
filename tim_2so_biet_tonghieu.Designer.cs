@@ -99,6 +99,7 @@
             Controls.Add(button1);
             Name = "tim_2so_biet_tonghieu";
             Text = "Form2";
+            Load += tim_2so_biet_tonghieu_Load;
             ResumeLayout(false);
             PerformLayout();
         }

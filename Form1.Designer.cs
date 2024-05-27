@@ -31,10 +31,11 @@ namespace WinFormsAppFinal
         {
             FirstNum = new Label();
             LastNum = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
+            txtUser = new TextBox();
+            txtPass = new TextBox();
+            btnLogin = new Button();
+            btnExit = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // FirstNum
@@ -61,41 +62,51 @@ namespace WinFormsAppFinal
             LastNum.Text = "Mat Khau";
             LastNum.Click += LastNum_Click;
             // 
-            // textBox1
+            // txtUser
             // 
-            textBox1.Location = new Point(370, 120);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(224, 28);
-            textBox1.TabIndex = 3;
-            textBox1.TextChanged += textBox1_TextChanged;
+            txtUser.Location = new Point(370, 120);
+            txtUser.Name = "txtUser";
+            txtUser.Size = new Size(224, 28);
+            txtUser.TabIndex = 3;
+            txtUser.TextChanged += textBox1_TextChanged;
             // 
-            // textBox2
+            // txtPass
             // 
-            textBox2.Location = new Point(370, 183);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(224, 28);
-            textBox2.TabIndex = 4;
-            textBox2.UseSystemPasswordChar = true;
+            txtPass.Location = new Point(370, 183);
+            txtPass.Name = "txtPass";
+            txtPass.Size = new Size(224, 28);
+            txtPass.TabIndex = 4;
+            txtPass.UseSystemPasswordChar = true;
             // 
-            // button1
+            // btnLogin
             // 
-            button1.Location = new Point(234, 273);
-            button1.Name = "button1";
-            button1.Size = new Size(150, 40);
-            button1.TabIndex = 5;
-            button1.Text = "Dang Nhap";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnLogin.Location = new Point(234, 313);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(150, 40);
+            btnLogin.TabIndex = 5;
+            btnLogin.Text = "Dang Nhap";
+            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
             // 
-            // button2
+            // btnExit
             // 
-            button2.Location = new Point(445, 273);
-            button2.Name = "button2";
-            button2.Size = new Size(149, 40);
-            button2.TabIndex = 6;
-            button2.Text = "Thoat";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btnExit.Location = new Point(445, 313);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(149, 40);
+            btnExit.TabIndex = 6;
+            btnExit.Text = "Thoat";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Times New Roman", 7.8F, FontStyle.Italic, GraphicsUnit.Point, 163);
+            label1.Location = new Point(331, 280);
+            label1.Name = "label1";
+            label1.Size = new Size(169, 15);
+            label1.TabIndex = 7;
+  //          label1.Text = "Sai tai khoan hoac mat khau!";
             // 
             // Form1
             // 
@@ -103,10 +114,11 @@ namespace WinFormsAppFinal
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonFace;
             ClientSize = new Size(769, 428);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(label1);
+            Controls.Add(btnExit);
+            Controls.Add(btnLogin);
+            Controls.Add(txtPass);
+            Controls.Add(txtUser);
             Controls.Add(LastNum);
             Controls.Add(FirstNum);
             Font = new Font("Times New Roman", 10.8F, FontStyle.Bold);
@@ -132,9 +144,10 @@ namespace WinFormsAppFinal
 
         private Label FirstNum;
         private Label LastNum;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button button1;
-        private Button button2;
+        private TextBox txtUser;
+        private TextBox txtPass;
+        private Button btnLogin;
+        private Button btnExit;
+        private Label label1;
     }
 }

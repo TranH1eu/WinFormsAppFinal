@@ -2,6 +2,11 @@ namespace WinFormsAppFinal
 {
     public partial class Form1 : Form
     {
+
+        string user = "admin";
+        string pass = "admin";
+        string FailToLogin = "Sai mat Khau";
+
         public Form1()
         {
             InitializeComponent();
@@ -22,15 +27,31 @@ namespace WinFormsAppFinal
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            Tinh_S f = new Tinh_S();
-            f.Show();
+            if(checkLogin(txtUser.Text, txtPass.Text) )
+            {
+                ListItem f = new ListItem();
+                f.Show();
+                this.Hide();
+
+            }
+            else label1.Text = "Sai tai khoan hoac mat khau!";
+
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        bool checkLogin(string user, string pass)
+        {
+            if(user == this.user && pass == this.pass) {
+                return true;
+
+            }
+            return false;
         }
     }
 }

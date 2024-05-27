@@ -195,6 +195,7 @@
             Controls.Add(radioButton1);
             Name = "Tinh_S";
             Text = "Form2";
+            Load += Tinh_S_Load;
             ResumeLayout(false);
             PerformLayout();
         }
