@@ -19,6 +19,7 @@
             }
             base.Dispose(disposing);
         }
+        //ád
 
         #region Windows Form Designer generated code
 
