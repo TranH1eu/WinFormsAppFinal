@@ -36,13 +36,17 @@ namespace WinFormsAppFinal
             btnLogin = new Button();
             btnExit = new Button();
             label1 = new Label();
+            panel1 = new Panel();
+            linkLabel1 = new LinkLabel();
+            checkBox1 = new CheckBox();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // FirstNum
             // 
             FirstNum.AutoSize = true;
             FirstNum.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold);
-            FirstNum.Location = new Point(234, 128);
+            FirstNum.Location = new Point(14, 19);
             FirstNum.Margin = new Padding(4, 0, 4, 0);
             FirstNum.Name = "FirstNum";
             FirstNum.Size = new Size(90, 20);
@@ -54,7 +58,7 @@ namespace WinFormsAppFinal
             // 
             LastNum.AutoSize = true;
             LastNum.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold);
-            LastNum.Location = new Point(235, 191);
+            LastNum.Location = new Point(14, 74);
             LastNum.Margin = new Padding(4, 0, 4, 0);
             LastNum.Name = "LastNum";
             LastNum.Size = new Size(89, 20);
@@ -64,7 +68,7 @@ namespace WinFormsAppFinal
             // 
             // txtUser
             // 
-            txtUser.Location = new Point(370, 120);
+            txtUser.Location = new Point(111, 11);
             txtUser.Name = "txtUser";
             txtUser.Size = new Size(224, 28);
             txtUser.TabIndex = 3;
@@ -72,7 +76,7 @@ namespace WinFormsAppFinal
             // 
             // txtPass
             // 
-            txtPass.Location = new Point(370, 183);
+            txtPass.Location = new Point(111, 66);
             txtPass.Name = "txtPass";
             txtPass.Size = new Size(224, 28);
             txtPass.TabIndex = 4;
@@ -80,21 +84,22 @@ namespace WinFormsAppFinal
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(234, 313);
+            btnLogin.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            btnLogin.Location = new Point(21, 186);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(150, 40);
+            btnLogin.Size = new Size(146, 40);
             btnLogin.TabIndex = 5;
-            btnLogin.Text = "Dang Nhap";
+            btnLogin.Text = "Đăng nhập";
             btnLogin.UseVisualStyleBackColor = true;
             btnLogin.Click += btnLogin_Click;
             // 
             // btnExit
             // 
-            btnExit.Location = new Point(445, 313);
+            btnExit.Location = new Point(195, 186);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(149, 40);
+            btnExit.Size = new Size(140, 40);
             btnExit.TabIndex = 6;
-            btnExit.Text = "Thoat";
+            btnExit.Text = "Đăng ký";
             btnExit.UseVisualStyleBackColor = true;
             btnExit.Click += btnExit_Click;
             // 
@@ -102,11 +107,50 @@ namespace WinFormsAppFinal
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 7.8F, FontStyle.Italic, GraphicsUnit.Point, 163);
-            label1.Location = new Point(331, 280);
+            label1.ForeColor = Color.Red;
+            label1.Location = new Point(91, 151);
             label1.Name = "label1";
-            label1.Size = new Size(169, 15);
+            label1.Size = new Size(59, 15);
             label1.TabIndex = 7;
-  //          label1.Text = "Sai tai khoan hoac mat khau!";
+         //   label1.Text = "ádasdasd";
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(linkLabel1);
+            panel1.Controls.Add(checkBox1);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(txtUser);
+            panel1.Controls.Add(FirstNum);
+            panel1.Controls.Add(btnExit);
+            panel1.Controls.Add(LastNum);
+            panel1.Controls.Add(btnLogin);
+            panel1.Controls.Add(txtPass);
+            panel1.Location = new Point(209, 83);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(360, 248);
+            panel1.TabIndex = 8;
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 163);
+            linkLabel1.Location = new Point(219, 118);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(116, 19);
+            linkLabel1.TabIndex = 8;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Quên mật khẩu?";
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 163);
+            checkBox1.Location = new Point(22, 118);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(81, 23);
+            checkBox1.TabIndex = 7;
+            checkBox1.Text = "ghi nhớ";
+            checkBox1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -114,20 +158,15 @@ namespace WinFormsAppFinal
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonFace;
             ClientSize = new Size(769, 428);
-            Controls.Add(label1);
-            Controls.Add(btnExit);
-            Controls.Add(btnLogin);
-            Controls.Add(txtPass);
-            Controls.Add(txtUser);
-            Controls.Add(LastNum);
-            Controls.Add(FirstNum);
+            Controls.Add(panel1);
             Font = new Font("Times New Roman", 10.8F, FontStyle.Bold);
             Margin = new Padding(4);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         private void FirstNum_Click(object sender, EventArgs e)
@@ -149,5 +188,8 @@ namespace WinFormsAppFinal
         private Button btnLogin;
         private Button btnExit;
         private Label label1;
+        private Panel panel1;
+        private CheckBox checkBox1;
+        private LinkLabel linkLabel1;
     }
 }
