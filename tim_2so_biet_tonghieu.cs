@@ -28,7 +28,7 @@ namespace WinFormsAppFinal
             double bigNum, smallNum;
             bigNum = (Tong + Hieu) / 2;
             smallNum = Tong - bigNum;
-
+            //hehe
             MessageBox.Show("Giá trị 2 số cần tìm là " + bigNum.ToString() + "và" + smallNum.ToString()); 
         }
     }
