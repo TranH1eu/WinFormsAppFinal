@@ -59,5 +59,15 @@ namespace WinFormsAppFinal.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _309107748_397052319302418_5322610285502758068_n {
+            get {
+                object obj = ResourceManager.GetObject("309107748_397052319302418_5322610285502758068_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

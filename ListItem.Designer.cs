@@ -36,6 +36,7 @@
             button6 = new Button();
             btnExit = new Button();
             button8 = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -123,11 +124,22 @@
             button8.UseVisualStyleBackColor = true;
             button8.Click += button8_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Times New Roman", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label1.Location = new Point(276, 18);
+            label1.Name = "label1";
+            label1.Size = new Size(247, 25);
+            label1.TabIndex = 8;
+            label1.Text = "Các dạng toán cần tính";
+            // 
             // ListItem
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(789, 467);
+            Controls.Add(label1);
             Controls.Add(button8);
             Controls.Add(btnExit);
             Controls.Add(button6);
@@ -139,7 +151,9 @@
             Name = "ListItem";
             Text = "Form2";
             FormClosed += ListItem_FormClosed;
+            Load += ListItem_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -152,5 +166,6 @@
         private Button button6;
         private Button btnExit;
         private Button button8;
+        private Label label1;
     }
 }

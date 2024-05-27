@@ -37,7 +37,7 @@ namespace WinFormsAppFinal
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if(checkLogin(txtUser.Text, txtPass.Text) )
+            if (checkLogin(txtUser.Text, txtPass.Text))
             {
                 ListItem f = new ListItem();
                 f.Show();
@@ -57,11 +57,17 @@ namespace WinFormsAppFinal
 
         bool checkLogin(string user, string pass)
         {
-            if(user ==this.user && pass == this.pass) {
+            if (user == this.user && pass == this.pass)
+            {
                 return true;
 
             }
             return false;
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

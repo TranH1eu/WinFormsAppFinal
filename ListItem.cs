@@ -68,6 +68,11 @@ namespace WinFormsAppFinal
             Tinh_S t = new Tinh_S();
             t.Show();
         }
+
+        private void ListItem_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

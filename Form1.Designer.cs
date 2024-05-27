@@ -29,6 +29,7 @@ namespace WinFormsAppFinal
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             FirstNum = new Label();
             LastNum = new Label();
             txtUser = new TextBox();
@@ -49,9 +50,9 @@ namespace WinFormsAppFinal
             FirstNum.Location = new Point(14, 19);
             FirstNum.Margin = new Padding(4, 0, 4, 0);
             FirstNum.Name = "FirstNum";
-            FirstNum.Size = new Size(90, 20);
+            FirstNum.Size = new Size(88, 20);
             FirstNum.TabIndex = 0;
-            FirstNum.Text = "Tai Khoan";
+            FirstNum.Text = "Tài khoản";
             FirstNum.Click += FirstNum_Click;
             // 
             // LastNum
@@ -61,9 +62,9 @@ namespace WinFormsAppFinal
             LastNum.Location = new Point(14, 74);
             LastNum.Margin = new Padding(4, 0, 4, 0);
             LastNum.Name = "LastNum";
-            LastNum.Size = new Size(89, 20);
+            LastNum.Size = new Size(85, 20);
             LastNum.TabIndex = 1;
-            LastNum.Text = "Mat Khau";
+            LastNum.Text = "Mật khẩu";
             LastNum.Click += LastNum_Click;
             // 
             // txtUser
@@ -110,9 +111,8 @@ namespace WinFormsAppFinal
             label1.ForeColor = Color.Red;
             label1.Location = new Point(91, 151);
             label1.Name = "label1";
-            label1.Size = new Size(59, 15);
+            label1.Size = new Size(0, 15);
             label1.TabIndex = 7;
-         //   label1.Text = "ádasdasd";
             // 
             // panel1
             // 
@@ -157,12 +157,14 @@ namespace WinFormsAppFinal
             AutoScaleDimensions = new SizeF(11F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonFace;
-            ClientSize = new Size(769, 428);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(750, 437);
             Controls.Add(panel1);
             Font = new Font("Times New Roman", 10.8F, FontStyle.Bold);
             Margin = new Padding(4);
             Name = "Form1";
             Text = "Form1";
+            FormClosed += Form1_FormClosed;
             Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
