@@ -84,7 +84,7 @@ namespace WinFormsAppFinal
         {
             if (option == 0 )
             {
-                label5.Text = "Hãy chọn dạng hình và nhập số liệu!";
+                MessageBox.Show("Hãy chọn dạng hình và nhập số liệu!");
             }else if (option == 1)
             {
                 double a, b, c;
@@ -94,8 +94,8 @@ namespace WinFormsAppFinal
                 double P, S;
                 P = a + b + c;
                 S = Math.Sqrt(P/2 * (P/2 - a) * (P/2 - b) * (P/2 - c));
-                label5.Text = "Chu vi của hình tam giác là " + P + "\nDiện tích của hình tam giác là " + S;
-                label5.Visible = true;
+                MessageBox.Show( "Chu vi của hình tam giác là " + P + "\nDiện tích của hình tam giác là " + S);
+                
             }else if(option == 2)
             {
                 double a, b;
@@ -104,8 +104,8 @@ namespace WinFormsAppFinal
                 double P, S;
                 P =  (a + b) * 2;
                 S = a * b;
-                label5.Text = "Chu vi của hình chữ nhật là " + P + "\nDiện tích của hình chữ nhật là " + S;
-                label5.Visible = true;
+                MessageBox.Show("Chu vi của hình chữ nhật là " + P + "\nDiện tích của hình chữ nhật là " + S);
+                
             }
             else if (option == 3)
             {
@@ -115,8 +115,8 @@ namespace WinFormsAppFinal
                 double P, S;
                 P = a * 4;
                 S = a * a;
-                label5.Text = "Chu vi của hình vuông là " + P + "\nDiện tích của hình vuông là " + S;
-                label5.Visible = true;
+                MessageBox.Show("Chu vi của hình vuông là " + P + "\nDiện tích của hình vuông là " + S);
+               
             }
             else
             {
@@ -126,8 +126,8 @@ namespace WinFormsAppFinal
                 double P, S;
                 P = 2 * Math.PI * a ;
                 S = Math.PI * a * a;
-                label5.Text = "Chu vi của hình tròn là " + P + "\nDiện tích của hình tròn là " + S;
-                label5.Visible = true;
+                MessageBox.Show("Chu vi của hình tròn là " + P + "\nDiện tích của hình tròn là " + S);
+                
             }
 
         }

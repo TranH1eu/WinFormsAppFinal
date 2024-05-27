@@ -29,7 +29,7 @@ namespace WinFormsAppFinal
             bigNum = (Tong + Hieu) / 2;
             smallNum = Tong - bigNum;
 
-            label3.Text = "Giá trị 2 số cần tìm là " + bigNum.ToString() + "và" + smallNum.ToString(); 
+            MessageBox.Show("Giá trị 2 số cần tìm là " + bigNum.ToString() + "và" + smallNum.ToString()); 
         }
     }
 
