@@ -11,5 +11,15 @@ namespace WinFormsAppFinal
         {
 
         }
+
+        private void Space_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnKq_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
