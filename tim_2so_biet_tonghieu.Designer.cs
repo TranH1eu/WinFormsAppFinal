@@ -33,7 +33,6 @@
             textBox2 = new TextBox();
             label1 = new Label();
             label2 = new Label();
-            label3 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -78,20 +77,11 @@
             label2.TabIndex = 4;
             label2.Text = "Nhập hiệu 2 số";
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(351, 245);
-            label3.Name = "label3";
-            label3.Size = new Size(0, 20);
-            label3.TabIndex = 5;
-            // 
             // tim_2so_biet_tonghieu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(textBox2);
@@ -99,7 +89,7 @@
             Controls.Add(button1);
             Name = "tim_2so_biet_tonghieu";
             Text = "Form2";
-            Load += tim_2so_biet_tonghieu_Load;
+            
             ResumeLayout(false);
             PerformLayout();
         }
@@ -111,6 +101,5 @@
         private TextBox textBox2;
         private Label label1;
         private Label label2;
-        private Label label3;
     }
 }

@@ -28,13 +28,8 @@ namespace WinFormsAppFinal
             double bigNum, smallNum;
             bigNum = (Tong + Hieu) / 2;
             smallNum = Tong - bigNum;
-
-            label3.Text = "Giá trị 2 số cần tìm là " + bigNum.ToString() + "và" + smallNum.ToString();
-        }
-
-        private void tim_2so_biet_tonghieu_Load(object sender, EventArgs e)
-        {
-
+            //hehe
+            MessageBox.Show("Giá trị 2 số cần tìm là " + bigNum.ToString() + "và" + smallNum.ToString()); 
         }
     }
 

@@ -40,7 +40,6 @@
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             button1 = new Button();
-            label5 = new Label();
             SuspendLayout();
             // 
             // radioButton1
@@ -156,31 +155,19 @@
             // 
             // button1
             // 
-            button1.Location = new Point(315, 396);
+            button1.Location = new Point(315, 385);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(83, 40);
             button1.TabIndex = 11;
-            button1.Text = "button1";
+            button1.Text = "Giải";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 10F);
-            label5.Location = new Point(329, 348);
-            label5.Name = "label5";
-            label5.Size = new Size(69, 23);
-            label5.TabIndex = 12;
-            label5.Text = "Kết quả";
-            label5.Visible = false;
             // 
             // Tinh_S
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label5);
             Controls.Add(button1);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
@@ -195,7 +182,6 @@
             Controls.Add(radioButton1);
             Name = "Tinh_S";
             Text = "Form2";
-            Load += Tinh_S_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -214,6 +200,5 @@
         private TextBox textBox2;
         private TextBox textBox3;
         private Button button1;
-        private Label label5;
     }
 }
