@@ -163,6 +163,7 @@ namespace WinFormsAppFinal
             Font = new Font("Times New Roman", 10.8F, FontStyle.Bold);
             Margin = new Padding(4);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             FormClosed += Form1_FormClosed;
             Load += Form1_Load;

@@ -149,6 +149,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "ListItem";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
             FormClosed += ListItem_FormClosed;
             Load += ListItem_Load;

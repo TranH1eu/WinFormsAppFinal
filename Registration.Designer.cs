@@ -182,7 +182,9 @@
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
             Name = "Registration";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Registration";
+            FormClosed += Registration_FormClosed;
             Load += Registration_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

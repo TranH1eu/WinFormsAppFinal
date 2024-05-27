@@ -35,7 +35,8 @@ namespace WinFormsAppFinal
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox5.Text != textBox3.Text) {
+            if (textBox5.Text != textBox3.Text)
+            {
                 label6.Text = "Mật khẩu không trùng khớp!";
             }
             else
@@ -62,6 +63,11 @@ namespace WinFormsAppFinal
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Registration_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
