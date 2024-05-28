@@ -73,6 +73,18 @@ namespace WinFormsAppFinal
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            quy_doi_don_vi t = new quy_doi_don_vi();
+            t.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Quan_he_ti_le t = new Quan_he_ti_le();
+            t.Show();
+        }
     }
 
 }
