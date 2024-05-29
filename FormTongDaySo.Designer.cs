@@ -40,60 +40,64 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(280, 102);
+            label1.Font = new Font("Times New Roman", 12F, FontStyle.Bold);
+            label1.Location = new Point(258, 103);
             label1.Name = "label1";
-            label1.Size = new Size(60, 20);
+            label1.Size = new Size(118, 23);
             label1.TabIndex = 0;
-            label1.Text = "So Dau:";
+            label1.Text = "Số hạng đầu:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(280, 166);
+            label2.Font = new Font("Times New Roman", 12F, FontStyle.Bold);
+            label2.Location = new Point(258, 167);
             label2.Name = "label2";
-            label2.Size = new Size(60, 20);
+            label2.Size = new Size(122, 23);
             label2.TabIndex = 1;
-            label2.Text = "So Cuoi";
+            label2.Text = "Số hạng cuối:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(233, 234);
+            label3.Font = new Font("Times New Roman", 12F, FontStyle.Bold);
+            label3.Location = new Point(254, 235);
             label3.Name = "label3";
-            label3.Size = new Size(137, 20);
+            label3.Size = new Size(124, 23);
             label3.TabIndex = 2;
-            label3.Text = "Khoang cach hai so";
+            label3.Text = "Khoảng cách:";
             // 
             // LastNum
             // 
-            LastNum.Location = new Point(387, 159);
+            LastNum.Location = new Point(434, 163);
             LastNum.Name = "LastNum";
             LastNum.Size = new Size(125, 27);
             LastNum.TabIndex = 3;
             // 
             // FirstNum
             // 
-            FirstNum.Location = new Point(387, 95);
+            FirstNum.Location = new Point(434, 99);
             FirstNum.Name = "FirstNum";
             FirstNum.Size = new Size(125, 27);
             FirstNum.TabIndex = 4;
             // 
             // Space
             // 
-            Space.Location = new Point(387, 231);
+            Space.Location = new Point(434, 235);
             Space.Name = "Space";
             Space.Size = new Size(125, 27);
             Space.TabIndex = 5;
             // 
             // Equal
             // 
-            Equal.Location = new Point(340, 336);
+            Equal.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            Equal.Location = new Point(345, 337);
             Equal.Name = "Equal";
-            Equal.Size = new Size(94, 29);
+            Equal.Size = new Size(116, 41);
             Equal.TabIndex = 6;
-            Equal.Text = "Ket Qua";
+            Equal.Text = "Kết Quả";
             Equal.UseVisualStyleBackColor = true;
-            Equal.Click += this.Equal_Click;
+            Equal.Click += Equal_Click;
             // 
             // FormTongDaySo
             // 

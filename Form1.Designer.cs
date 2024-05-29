@@ -47,7 +47,7 @@ namespace WinFormsAppFinal
             // 
             FirstNum.AutoSize = true;
             FirstNum.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold);
-            FirstNum.Location = new Point(14, 19);
+            FirstNum.Location = new Point(13, 11);
             FirstNum.Margin = new Padding(4, 0, 4, 0);
             FirstNum.Name = "FirstNum";
             FirstNum.Size = new Size(88, 20);
@@ -59,7 +59,7 @@ namespace WinFormsAppFinal
             // 
             LastNum.AutoSize = true;
             LastNum.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold);
-            LastNum.Location = new Point(14, 74);
+            LastNum.Location = new Point(16, 75);
             LastNum.Margin = new Padding(4, 0, 4, 0);
             LastNum.Name = "LastNum";
             LastNum.Size = new Size(85, 20);
@@ -69,24 +69,24 @@ namespace WinFormsAppFinal
             // 
             // txtUser
             // 
-            txtUser.Location = new Point(111, 11);
+            txtUser.Location = new Point(13, 34);
             txtUser.Name = "txtUser";
-            txtUser.Size = new Size(224, 28);
+            txtUser.Size = new Size(321, 28);
             txtUser.TabIndex = 3;
             txtUser.TextChanged += textBox1_TextChanged;
             // 
             // txtPass
             // 
-            txtPass.Location = new Point(111, 66);
+            txtPass.Location = new Point(16, 98);
             txtPass.Name = "txtPass";
-            txtPass.Size = new Size(224, 28);
+            txtPass.Size = new Size(318, 28);
             txtPass.TabIndex = 4;
             txtPass.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 
             btnLogin.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            btnLogin.Location = new Point(21, 186);
+            btnLogin.Location = new Point(13, 186);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(146, 40);
             btnLogin.TabIndex = 5;
@@ -109,7 +109,7 @@ namespace WinFormsAppFinal
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 7.8F, FontStyle.Italic, GraphicsUnit.Point, 163);
             label1.ForeColor = Color.Red;
-            label1.Location = new Point(91, 151);
+            label1.Location = new Point(89, 165);
             label1.Name = "label1";
             label1.Size = new Size(0, 15);
             label1.TabIndex = 7;
@@ -125,16 +125,16 @@ namespace WinFormsAppFinal
             panel1.Controls.Add(LastNum);
             panel1.Controls.Add(btnLogin);
             panel1.Controls.Add(txtPass);
-            panel1.Location = new Point(209, 83);
+            panel1.Location = new Point(220, 83);
             panel1.Name = "panel1";
-            panel1.Size = new Size(360, 248);
+            panel1.Size = new Size(349, 248);
             panel1.TabIndex = 8;
             // 
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
             linkLabel1.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            linkLabel1.Location = new Point(219, 118);
+            linkLabel1.Location = new Point(218, 139);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(116, 19);
             linkLabel1.TabIndex = 8;
@@ -145,7 +145,7 @@ namespace WinFormsAppFinal
             // 
             checkBox1.AutoSize = true;
             checkBox1.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            checkBox1.Location = new Point(22, 118);
+            checkBox1.Location = new Point(13, 139);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(81, 23);
             checkBox1.TabIndex = 7;

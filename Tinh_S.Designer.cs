@@ -181,6 +181,7 @@
             Controls.Add(radioButton2);
             Controls.Add(radioButton1);
             Name = "Tinh_S";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Form2";
             ResumeLayout(false);
             PerformLayout();

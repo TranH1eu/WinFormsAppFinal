@@ -107,6 +107,7 @@
             Controls.Add(NumChecked);
             Controls.Add(btnCheck);
             Name = "TimSoChiaHet";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "TimSoChiaHet";
             Load += TimSoChiaHet_Load;
             ResumeLayout(false);

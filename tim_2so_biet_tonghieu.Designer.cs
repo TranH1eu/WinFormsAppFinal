@@ -89,8 +89,8 @@
             Controls.Add(textBox1);
             Controls.Add(button1);
             Name = "tim_2so_biet_tonghieu";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Form2";
-            
             ResumeLayout(false);
             PerformLayout();
         }

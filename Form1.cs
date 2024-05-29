@@ -37,14 +37,19 @@ namespace WinFormsAppFinal
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (checkLogin(txtUser.Text, txtPass.Text))
+
+            ListItem f = new ListItem();
+            f.Show();
+            this.Hide();
+
+            /*if (checkLogin(txtUser.Text, txtPass.Text))
             {
                 ListItem f = new ListItem();
                 f.Show();
                 this.Hide();
 
             }
-            else label1.Text = "Sai tai khoan hoac mat khau!";
+            else label1.Text = "Sai tai khoan hoac mat khau!";*/
 
         }
 
@@ -55,15 +60,16 @@ namespace WinFormsAppFinal
             this.Hide();
         }
 
-        bool checkLogin(string user, string pass)
+        /*bool checkLogin(string user, string pass)
         {
-            if (user == this.user && pass == this.pass)
+            *//*if (user == this.user && pass == this.pass)
             {
                 return true;
 
             }
-            return false;
-        }
+            return false;*//*
+            
+        }*/
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
