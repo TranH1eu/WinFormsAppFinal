@@ -34,62 +34,22 @@ namespace WinFormsAppFinal
             num = double.Parse(NumChecked.Text);
             string finalEqual = "";
             if(ck2.Checked) {
-                if (num % 2 == 0) finalEqual += "chia het 2\n";
-                else finalEqual += "khong chia het cho 2\n";
+                if (num % 2 == 0) finalEqual +="Số " + NumChecked.Text + " chia hết cho 2\n";
+                else finalEqual += "Số " + NumChecked.Text + " không chia hết cho 2\n";
             }
 
 
             if (ck3.Checked)
             {
-                if (num % 3 == 0) finalEqual += "chia het 3\n";
-                else finalEqual += "khong chia het cho 3\n";
+                if (num % 3 == 0) finalEqual += "Số " + NumChecked.Text + " chia hết cho 3\n";
+                else finalEqual += "Số " + NumChecked.Text + " không chia hết cho 3\n";
             }
 
             if (ck5.Checked)
             {
-                if (num % 5 == 0) finalEqual += "chia het 5\n";
-                else finalEqual += "khong chia het cho 5\n";
+                if (num % 5 == 0) finalEqual += "Số " + NumChecked.Text + " chia hết cho 5\n";
+                else finalEqual += "Số " + NumChecked.Text + " không chia hết cho 2\n";
             }
-            /*if (check == 1)
-            {
-                if (num % 2 == 0) finalEqual = "Chia het cho 2";
-                else finalEqual += "";
-            }
-            else if(check == 5)
-            {
-                if (num % 3 == 0) finalEqual = "Chia het cho 3";
-                else finalEqual += "";
-            }
-            else if (check == 10)
-            {
-                if (num % 5 == 0) finalEqual = "Chia het cho 5";
-                else finalEqual += "";
-            }
-            else if (check == 6)
-            {
-                if (num % 3 == 0) finalEqual += "Chia het cho 3\n";
-                if (num % 2 == 0) finalEqual += "Chia het cho 2";
-                else finalEqual += "";
-            }
-            else if (check == 11)
-            {
-                if (num % 5 == 0) finalEqual += "Chia het cho 5\n";
-                if (num % 2 == 0) finalEqual += "Chia het cho 2";
-                else finalEqual += "";
-            }
-            else if(check == 15)
-            {
-                if (num % 5 == 0) finalEqual += "Chia het cho 5\n";
-                if (num % 3 == 0) finalEqual += "Chia het cho 3";
-                else finalEqual += "";
-            }
-            else if(check == 16)
-            {
-                if (num % 2 == 0) finalEqual += "Chia het cho 2\n";
-                if (num % 5 == 0) finalEqual += "Chia het cho 5\n";
-                if (num % 3 == 0) finalEqual += "Chia het cho 3";
-                else finalEqual += "";
-            }*/
             MessageBox.Show(finalEqual);
         }
 

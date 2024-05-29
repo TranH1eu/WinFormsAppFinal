@@ -38,11 +38,12 @@
             // 
             // btnCheck
             // 
-            btnCheck.Location = new Point(351, 330);
+            btnCheck.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            btnCheck.Location = new Point(351, 318);
             btnCheck.Name = "btnCheck";
-            btnCheck.Size = new Size(94, 29);
+            btnCheck.Size = new Size(116, 41);
             btnCheck.TabIndex = 0;
-            btnCheck.Text = "Kiem Tra";
+            btnCheck.Text = "Kiểm tra";
             btnCheck.UseVisualStyleBackColor = true;
             btnCheck.Click += btnCheck_Click;
             // 
@@ -58,9 +59,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(286, 104);
             label1.Name = "label1";
-            label1.Size = new Size(69, 20);
+            label1.Size = new Size(67, 20);
             label1.TabIndex = 5;
-            label1.Text = "Nhap So:";
+            label1.Text = "Nhập số:";
             // 
             // ck5
             // 
@@ -69,7 +70,7 @@
             ck5.Name = "ck5";
             ck5.Size = new Size(183, 24);
             ck5.TabIndex = 4;
-            ck5.Text = "Kiem tra chia het cho 5";
+            ck5.Text = "Kiểm tra chia hết cho 5";
             ck5.UseVisualStyleBackColor = true;
             ck5.CheckedChanged += ck5_CheckedChanged;
             // 
@@ -80,7 +81,7 @@
             ck3.Name = "ck3";
             ck3.Size = new Size(183, 24);
             ck3.TabIndex = 3;
-            ck3.Text = "Kiem tra chia het cho 3";
+            ck3.Text = "Kiểm tra chia hết cho 3";
             ck3.UseVisualStyleBackColor = true;
             ck3.CheckedChanged += ck3_CheckedChanged;
             // 
@@ -91,7 +92,7 @@
             ck2.Name = "ck2";
             ck2.Size = new Size(183, 24);
             ck2.TabIndex = 2;
-            ck2.Text = "Kiem tra chia het cho 2";
+            ck2.Text = "Kiểm tra chia hết cho 2";
             ck2.UseVisualStyleBackColor = true;
             ck2.CheckedChanged += ck2_CheckedChanged;
             // 
