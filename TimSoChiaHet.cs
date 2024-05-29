@@ -48,7 +48,7 @@ namespace WinFormsAppFinal
             if (ck5.Checked)
             {
                 if (num % 5 == 0) finalEqual += "Số " + NumChecked.Text + " chia hết cho 5\n";
-                else finalEqual += "Số " + NumChecked.Text + " không chia hết cho 2\n";
+                else finalEqual += "Số " + NumChecked.Text + " không chia hết cho 5\n";
             }
             MessageBox.Show(finalEqual);
         }

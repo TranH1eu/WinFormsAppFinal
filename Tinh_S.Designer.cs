@@ -62,7 +62,7 @@
             radioButton2.Size = new Size(122, 24);
             radioButton2.TabIndex = 1;
             radioButton2.TabStop = true;
-            radioButton2.Text = "Hình chữ nhật";
+            radioButton2.Text = "Hình Chữ nhật";
             radioButton2.UseVisualStyleBackColor = true;
             radioButton2.CheckedChanged += radioButton2_CheckedChanged;
             // 
@@ -74,7 +74,7 @@
             radioButton3.Size = new Size(106, 24);
             radioButton3.TabIndex = 2;
             radioButton3.TabStop = true;
-            radioButton3.Text = "Hình vuông";
+            radioButton3.Text = "Hình Vuông";
             radioButton3.UseVisualStyleBackColor = true;
             radioButton3.CheckedChanged += radioButton3_CheckedChanged;
             // 
