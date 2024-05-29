@@ -38,9 +38,10 @@
             // 
             // button1
             // 
-            button1.Location = new Point(313, 245);
+            button1.Location = new Point(368, 332);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(129, 46);
+            button1.Size = new Size(147, 61);
             button1.TabIndex = 0;
             button1.Text = "Đổi đơn vị";
             button1.UseVisualStyleBackColor = true;
@@ -48,31 +49,34 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(100, 196);
+            textBox1.Location = new Point(114, 261);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(106, 23);
+            textBox1.Size = new Size(121, 29);
             textBox1.TabIndex = 3;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(427, 196);
+            textBox2.Location = new Point(488, 261);
+            textBox2.Margin = new Padding(3, 4, 3, 4);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(108, 23);
+            textBox2.Size = new Size(123, 29);
             textBox2.TabIndex = 4;
             textBox2.TextChanged += textBox2_TextChanged;
             // 
             // textBox3
             // 
-            textBox3.BackColor = SystemColors.InactiveBorder;
+            textBox3.BackColor = SystemColors.GradientInactiveCaption;
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Segoe UI", 20F);
-            textBox3.Location = new Point(363, 196);
+            textBox3.Location = new Point(422, 245);
+            textBox3.Margin = new Padding(3, 4, 3, 4);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(34, 34);
+            textBox3.Size = new Size(37, 45);
             textBox3.TabIndex = 5;
             textBox3.Text = "=";
             textBox3.TextAlign = HorizontalAlignment.Center;
@@ -81,32 +85,36 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(222, 196);
+            comboBox1.Location = new Point(254, 261);
+            comboBox1.Margin = new Padding(3, 4, 3, 4);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
+            comboBox1.Size = new Size(138, 28);
             comboBox1.TabIndex = 6;
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(556, 196);
+            comboBox2.Location = new Point(635, 261);
+            comboBox2.Margin = new Padding(3, 4, 3, 4);
             comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
+            comboBox2.Size = new Size(138, 28);
             comboBox2.TabIndex = 7;
             comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
             // quy_doi_don_vi
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 430);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(914, 573);
             Controls.Add(comboBox2);
             Controls.Add(comboBox1);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(button1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "quy_doi_don_vi";
             Text = "quy_doi_don_vi";
             ResumeLayout(false);

@@ -108,24 +108,26 @@
             // 
             // btnExit
             // 
+            btnExit.BackColor = Color.DodgerBlue;
             btnExit.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnExit.Location = new Point(57, 398);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(108, 43);
             btnExit.TabIndex = 6;
             btnExit.Text = "Đăng xuất";
-            btnExit.UseVisualStyleBackColor = true;
+            btnExit.UseVisualStyleBackColor = false;
             btnExit.Click += btnExit_Click;
             // 
             // button8
             // 
+            button8.BackColor = Color.Red;
             button8.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button8.Location = new Point(617, 398);
             button8.Name = "button8";
             button8.Size = new Size(110, 43);
             button8.TabIndex = 7;
             button8.Text = "Thoát";
-            button8.UseVisualStyleBackColor = true;
+            button8.UseVisualStyleBackColor = false;
             button8.Click += button8_Click;
             // 
             // label1
@@ -142,6 +144,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.CadetBlue;
             ClientSize = new Size(789, 467);
             Controls.Add(label1);
             Controls.Add(button8);

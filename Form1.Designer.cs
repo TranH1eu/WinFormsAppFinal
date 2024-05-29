@@ -145,7 +145,7 @@ namespace WinFormsAppFinal
             // 
             checkBox1.AutoSize = true;
             checkBox1.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            checkBox1.Location = new Point(13, 139);
+            checkBox1.Location = new Point(16, 138);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(81, 23);
             checkBox1.TabIndex = 7;

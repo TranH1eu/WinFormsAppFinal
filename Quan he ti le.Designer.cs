@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Quan_he_ti_le));
             label1 = new Label();
             textBox1 = new TextBox();
             button1 = new Button();
@@ -36,12 +37,14 @@
             radioButton1 = new RadioButton();
             radioButton2 = new RadioButton();
             textBox2 = new TextBox();
+            panel1 = new Panel();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(266, 152);
+            label1.Location = new Point(21, 43);
             label1.Name = "label1";
             label1.Size = new Size(105, 20);
             label1.TabIndex = 8;
@@ -50,7 +53,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(367, 148);
+            textBox1.Location = new Point(141, 40);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(125, 27);
             textBox1.TabIndex = 6;
@@ -58,7 +61,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(277, 320);
+            button1.Location = new Point(225, 206);
             button1.Name = "button1";
             button1.Size = new Size(83, 60);
             button1.TabIndex = 5;
@@ -69,7 +72,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(606, 159);
+            label4.Location = new Point(361, 50);
             label4.Name = "label4";
             label4.Size = new Size(72, 20);
             label4.TabIndex = 12;
@@ -79,7 +82,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(606, 212);
+            label5.Location = new Point(361, 103);
             label5.Name = "label5";
             label5.Size = new Size(72, 20);
             label5.TabIndex = 13;
@@ -89,7 +92,7 @@
             // radioButton1
             // 
             radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(277, 221);
+            radioButton1.Location = new Point(32, 112);
             radioButton1.Margin = new Padding(3, 4, 3, 4);
             radioButton1.Name = "radioButton1";
             radioButton1.Size = new Size(64, 24);
@@ -102,7 +105,7 @@
             // radioButton2
             // 
             radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(277, 272);
+            radioButton2.Location = new Point(32, 163);
             radioButton2.Margin = new Padding(3, 4, 3, 4);
             radioButton2.Name = "radioButton2";
             radioButton2.Size = new Size(61, 24);
@@ -114,33 +117,43 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(367, 241);
+            textBox2.Location = new Point(141, 131);
             textBox2.Margin = new Padding(3, 4, 3, 4);
             textBox2.Name = "textBox2";
             textBox2.PlaceholderText = "Tổng/Hiệu";
-            textBox2.Size = new Size(114, 27);
+            textBox2.Size = new Size(125, 27);
             textBox2.TabIndex = 1;
             textBox2.TextChanged += textBox2_TextChanged_1;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(radioButton2);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(radioButton1);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label5);
+            panel1.Location = new Point(193, 122);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(513, 298);
+            panel1.TabIndex = 14;
             // 
             // Quan_he_ti_le
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(914, 600);
-            Controls.Add(textBox2);
-            Controls.Add(radioButton2);
-            Controls.Add(radioButton1);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label1);
-            Controls.Add(textBox1);
-            Controls.Add(button1);
+            Controls.Add(panel1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Quan_he_ti_le";
             Text = "Quan_he_ti_le";
             Load += Quan_he_ti_le_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -152,5 +165,6 @@
         private RadioButton radioButton1;
         private RadioButton radioButton2;
         private TextBox textBox2;
+        private Panel panel1;
     }
 }

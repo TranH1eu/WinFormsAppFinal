@@ -38,9 +38,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point(333, 308);
+            button1.Location = new Point(321, 308);
             button1.Name = "button1";
-            button1.Size = new Size(99, 40);
+            button1.Size = new Size(125, 45);
             button1.TabIndex = 0;
             button1.Text = "Giải";
             button1.UseVisualStyleBackColor = true;
@@ -82,6 +82,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(label2);
             Controls.Add(label1);
